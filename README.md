@@ -16,10 +16,16 @@ heroku container:login
 
 Remote to heroku server.
 ```sh
-heroku git:remote -a your_app_name
+git init
+heroku git:remote -a <your_app_name>
 ```
 
 Build and push images (web, db)
 ```sh
 heroku container:push web db --recursive
+```
+
+# Test
+```sh
+heroku ps
 ```
